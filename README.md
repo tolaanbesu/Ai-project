@@ -1,3 +1,7 @@
+# 1.Lisan Geberetensay      UGR/1712/15
+# 2.Tola Anbesu             UGR/7995/15
+# 3.Yohannes Gizaw          UGR/6435/15
+# 4.Nathnael Hailemariam    UGR/9299/16
 📊 Principal Component Analysis (PCA) in Python
 
 This project implements Principal Component Analysis (PCA) from scratch using NumPy.
