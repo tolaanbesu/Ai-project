@@ -1,101 +1,106 @@
-# 1.Lisan Geberetensay      UGR/1712/15
-# 2.Tola Anbesu             UGR/7995/15
-# 3.Yohannes Gizaw          UGR/6435/15
-# 4.Nathnael Hailemariam    UGR/9299/16
-📊 Principal Component Analysis (PCA) in Python
 
-This project implements Principal Component Analysis (PCA) from scratch using NumPy.
-It allows users to reduce the dimensionality of a dataset by selecting the top k principal components.
+# 🧬 PCA From Scratch in Python
 
-The program runs in a menu-driven, interactive command-line interface, where users manually input data and compute PCA results.
+A minimal but **powerful** command‑line tool that performs Principal Component Analysis (PCA) from scratch using NumPy. 
 
-🚀 Features
+---
 
-PCA implementation using covariance matrix and eigen decomposition
+## 👥 Authors
 
-Interactive menu-based CLI
+- 1. Lisan Geberetensay — UGR/1712/15  
+- 2. Tola Anbesu — UGR/7995/15  
+- 3. Yohannes Gizaw — UGR/6435/15  
+- 4. Nathnael Hailemariam — UGR/9299/16
 
-User-defined:
+---
 
-Number of samples
+## 📊 What This Project Does
 
-Number of features
+This project lets you: 
 
-Dataset values
+- Implement PCA using covariance matrix and eigen decomposition  
+- Interactively enter your own dataset via a menu‑driven CLI  
+- Choose the number of principal components \(k\) and reduce dimensionality  
+- See reduced data, top eigenvalues, and original vs reduced shapes  
+- Benefit from input validation and basic error handling  
 
-Number of principal components (k)
+---
 
-Displays:
+## 🧠 Quick Primer: What Is PCA?
 
-Reduced data
+Principal Component Analysis (PCA) is a dimensionality reduction technique widely used in: 
 
-Top eigenvalues
+- Machine learning  
+- Data science  
+- Statistics  
 
-Original and reduced data shapes
+It transforms high‑dimensional data into a lower‑dimensional space while preserving as much variance as possible, making patterns more **visible** and models simpler. 
 
-Input validation and error handling
+---
 
-🧠 What is PCA?
+## 🛠️ Requirements
 
-Principal Component Analysis (PCA) is a dimensionality reduction technique used in:
+Make sure you have the following installed: 
 
-Machine Learning
+- Python (3.x recommended)  
+- NumPy  
 
-Data Science
+Install NumPy with: 
 
-Statistics
-
-It transforms high-dimensional data into a lower-dimensional space while preserving as much variance as possible.
-
-🛠️ Requirements
-
-Make sure you have Python and NumPy installed.
-
+```bash
 pip install numpy
+```
 
-▶️ How to Run
 
-Clone the repository or download the file.
+---
 
-Open a terminal in the project directory.
+## ▶️ How to Run
 
-Run the program:
-
+1. Clone this repository or download the project files. 
+2. Open a terminal in the project directory. 
+3. Run the main program: 
+```bash
 python main.py
+```
 
-📋 How the Program Works
 
-Choose Compute PCA from the menu.
+---
 
-Enter:
+## 📋 Interactive Workflow
 
-Number of samples (rows)
+When you run the program, use the menu to choose **Compute PCA**, then follow the prompts: 
 
-Number of features (columns)
+1. Enter number of samples (rows). 
+2. Enter number of features (columns). 
+3. Input dataset values row by row. 
+4. Enter the desired number of principal components $k$. 
 
-Input dataset values row by row.
+The program outputs: 
 
-Enter the number of principal components (k).
+- Reduced dataset
+- Top eigenvalues
+- Original and reduced data shapes
 
-The program outputs:
+---
 
-Reduced dataset
+## 🧪 Example Session
 
-Top eigenvalues
+Example input: 
 
-Original and reduced shapes
+- Number of samples: `3`
+- Number of features: `2`
 
-🧪 Example Input
-Number of samples: 3
-Number of features: 2
-
+```text
 Row 1: 2 4
 Row 2: 1 3
 Row 3: 0 2
 
 k = 1
+```
 
-Output
+Example output: 
+
+```text
 Original shape: (3, 2)
 Reduced shape: (3, 1)
 Top eigenvalue(s): [2.]
@@ -103,25 +108,38 @@ Reduced data:
 [[-1.414]
  [ 0.   ]
  [ 1.414]]
+```
 
-📂 Code Structure
+
+---
+
+## 📂 Project Structure
+
+```text
 main.py
 │
-├── pca(X, k)        # PCA function
+├── pca(X, k)        # Core PCA function
 └── main program     # Menu-driven user interface
+```
 
-⚙️ PCA Algorithm Steps
 
-1.Compute the mean of the dataset
 
-2.Center the data
+---
 
-3.Compute the covariance matrix
+## ⚙️ PCA Algorithm Steps
 
-4.Find eigenvalues and eigenvectors
+Under the hood, the PCA implementation performs: 
 
-5.Sort eigenvalues in descending order
+1. Compute the mean of the dataset
+2. Center the data by subtracting the mean
+3. Compute the covariance matrix
+4. Find eigenvalues and eigenvectors
+5. Sort eigenvalues in descending order
+6. Select the top $k$ eigenvectors
+7. Project the data into a lower‑dimensional space
 
-6.Select top k eigenvectors
+---
 
-7.Project data into lower-dimensional space
+
+```
+`
