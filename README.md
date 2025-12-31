@@ -1,3 +1,4 @@
+Group members
 📊 Principal Component Analysis (PCA) in Python
 
 This project implements Principal Component Analysis (PCA) from scratch using NumPy.
