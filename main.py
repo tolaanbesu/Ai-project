@@ -1,3 +1,8 @@
+# 1.Lisan Geberetensay      UGR/1712/15
+# 2.Tola Anbesu             UGR/7995/15
+# 3.Yohannes Gizaw          UGR/6435/15
+# 4.Nathnael Hailemariam    UGR/9299/16
+
 import numpy as np
 
 def pca(X, k):
@@ -34,12 +39,10 @@ if __name__ == "__main__":
 
         elif choice == "1":
             try:
-                # Input number of samples
                 n_samples = int(input("Enter number of samples (rows): "))
                 if n_samples <= 0:
                     raise ValueError("Number of samples must be positive.")
 
-                # Input number of features
                 n_features = int(input("Enter number of features (columns): "))
                 if n_features <= 0:
                     raise ValueError("Number of features must be positive.")
@@ -67,10 +70,8 @@ if __name__ == "__main__":
                         "k must be greater than 0 and less than or equal to number of features."
                     )
 
-                # Run PCA
                 X_reduced, eigenvalues = pca(X, k)
 
-                # Output
                 print("\nOriginal shape:", X.shape)
                 print("Reduced shape:", X_reduced.shape)
                 print("Top eigenvalue(s):", eigenvalues)
